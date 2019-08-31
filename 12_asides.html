@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test File</title>
+
+    <style>
+        /* targeting a class, overrides the element it is held in (no matter the order it is listed in the styling, UNLESS you add in '!important' after the attribute you want to take precedence */
+        .hello {
+            color:crimson;
+            margin-top: -30px;
+            margin-left: -30px;
+            /* can have negative values for margins, will drift off page, but NOT padding (thats inside the box only, cannot go outside) */
+        }
+        h1 {
+            /* display: none; - completely removes element (good for mobile devices */
+            /* visibility: hidden; - disappears, but space is left */
+            color: blueviolet !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias pariatur dignissimos assumenda aspernatur voluptatum vitae!</p>
+</body>
+</html>
