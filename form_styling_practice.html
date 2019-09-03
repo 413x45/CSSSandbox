@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: darkslateblue;
+            line-height: 1.8em;
+        }
+        a {
+            text-decoration: none;
+            color: plum;
+        }
+        #container {
+           max-width: 60%;
+           margin: 30px auto;
+           padding: 15px 25px;
+        }
+        .form-wrapper {
+            background-color: antiquewhite;
+            padding: 25px;
+            color: #333;
+        }
+        .form-wrapper h1, .form-wrapper p {
+            text-align: center;
+            line-height: 1.4em;
+            padding-top: 10px;
+        }
+        .form-wrapper .form-blocks {
+            margin-top: 20px;
+        }
+        .form-wrapper .form-blocks label {
+            display: block;
+        }
+        .form-wrapper .form-blocks input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-wrapper .btn {
+            display: block;
+            background-color: plum;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-wrapper .btn:hover {
+            background-color: rgb(158, 110, 158);
+            font-size: 1.1em;
+        }
+        .bottom-p {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        footer p {
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+        }
+        footer p a:hover {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrapper">
+            <h1>Contact Me</h1>
+            <p>Let's work together!</p>
+            <form>
+                <div class="form-blocks">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstname" id="first-name">
+                </div>
+                <div class="form-blocks">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastname" id="last-name">
+                </div>
+                <div class="form-blocks">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-blocks">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-blocks">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="password" id="password2">
+                </div>
+                <button class="btn">Send To Me!</button>
+                <p class="bottom-p">By clicking the Send To Me! button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Private Policy</a></p>
+            </form>
+        </div>
+        <footer>
+            <p>Already working with me? <a href="#">Login Here</a></p>
+        </footer>
+    </div>
+</body>
+</html>
