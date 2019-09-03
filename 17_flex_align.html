@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Align</title>
+
+    <style>
+        #container {
+            background: #555;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* alignment properties */
+            /* justify-content - aligns items horizontally, x-axis */
+            justify-content: space-evenly;
+            /* 
+                OPTIONS:
+                flex-start
+                flex-end
+                center
+                space-around 
+                space-evenly
+                space-between
+            */
+
+            /* must set height in order to align items vertically */
+            height: 600px;
+            /* align-items: aligns items vertically, y-axis */
+            align-items: baseline;
+            /* 
+                OPTIONS:
+                stretch (this is default)  
+                flex-start
+                flex-end
+                center
+                baseline (similar to flex-start)
+            */
+            
+            /* align-content: aligns items vertically where there is extra space (wrap on) */
+            align-content: baseline;
+            /* 
+                OPTIONS: 
+                flex-start
+                flex-end
+                center
+                baseline (similar to flex-start - default)
+                stretch
+            */
+        }
+        .item-1 {
+            order: 3;
+        }
+        .item-2 {
+            /* align single item vertical (DOESN'T WORK IF FLEX-WRAP IS ON) */
+            align-self: center;
+            /* 
+                OPTIONS: 
+                flex-start
+                flex-end
+                center
+                baseline
+                stretch
+            */
+            order: 2;
+        }
+        .item-3 {
+            order: 1;
+        }
+        .item {
+            background: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.5rem;
+            padding: 1 rem;
+            flex-basis: 200px;
+            /* flex-basis, same as width */
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- shorthand for below: .item.item-${<h3>Item $</h3>}*3 -->
+        <div class="item item-1"><h3>Item 1</h3></div>
+        <div class="item item-2"><h3>Item 2</h3></div>
+        <div class="item item-3"><h3>Item 3</h3></div>
+    </div>
+</body>
+</html>
